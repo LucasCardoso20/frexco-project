@@ -1,0 +1,43 @@
+.btn-container{
+    display: flex;
+    gap: 1rem;
+}
+
+
+  .selector {
+    display: grid;
+    grid-template-areas:
+      'happy lovers'
+      'pick  pick';
+  }
+  
+  label {
+    display: block;
+    cursor: pointer;
+  }
+  
+  .happy-card {
+    position: relative;
+  
+    padding: 20px;
+    color: #586875;
+    background-color: #f4f7f7;
+    box-shadow: 0 10px 20px #0006;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+  }
+  
+  h2 {
+    margin: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #bdd6d2;
+    font-size: 1.5rem;
+  }
+  
+  ul {
+    margin: 15px 0;
+    padding-left: 30px;
+    line-height: 1.5rem;
+    list-style-type: square;
+  }

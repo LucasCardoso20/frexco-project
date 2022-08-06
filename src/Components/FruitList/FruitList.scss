@@ -1,0 +1,15 @@
+.products-grid {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+  gap: 2rem;
+  margin: 2rem;
+}
+
+@media screen and (max-width: 1000px){
+  .products-grid {
+    padding: 2rem 1rem !important;
+    margin: 0;
+  }
+}
+

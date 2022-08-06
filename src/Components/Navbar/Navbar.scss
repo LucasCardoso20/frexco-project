@@ -1,0 +1,45 @@
+@import '../../index.scss';
+
+.nav{
+    ul{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        img{
+            height: auto;
+            width: 145px;
+        }
+
+        svg{
+            color: $main-color;
+            font-size: 30px;
+        }
+    }
+}
+
+// .cart-container{
+//     transform: translateX(100%);
+//     width: 100%;
+//     text-align: center;
+//     display: flex;
+//     background-color: #fff;
+//     top: 0;
+//     height: 100vh;
+//     transition: .2s ease-in-out;
+//     position: fixed;
+// }
+
+// .cart-close{
+//     transform: translateX(0);
+// }
+
+// .cart-show{
+//     text-align: center;
+//     display: flex;
+//     background-color: #fff;
+//     top: 0;
+//     height: 100vh;
+//     transition: .2s ease-in-out;
+//     position: fixed;
+//     transform: translateX(0)!important;
+// }

@@ -1,0 +1,55 @@
+@import '../../index.scss';
+
+.cart{
+    display: flex;
+}
+
+.cart-container {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .delete-product-container {
+        svg {
+            color: $main-color;
+            font-size: 30px;
+            cursor: pointer;
+        }
+    }
+
+    .quantity-container{
+        margin: 1rem 0;
+        display: flex;
+        gap: 1.5rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+
+//nutritions table 
+
+
+
+//responsive 
+
+
+
+@media screen and (max-width: 600px){
+    .cart-container{
+        width: 100%;
+        margin: 1rem 2rem;
+    }
+}

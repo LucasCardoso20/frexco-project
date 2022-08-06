@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import axios from 'axios';
+import { Home, Navbar } from './Components';
+import SingleProduct from './pages/SingleProduct/SingleProduct';
+import Cart from './pages/Cart/Cart';
+import "./Components/Navbar/Navbar.scss"
+import "./Components/Home/Home.scss"
+import "./Components/FruitList/FruitList.scss"
+import "./Components/SingleFruit/SingleFruit.scss"
+import "./Components/Pagination/Pagination.scss"
+import "./pages/Cart/Cart.scss"
+import "./pages/SingleProduct/singleProduct.scss"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/singleProduct/:id" element={<SingleProduct />} />
+      <Route path="/cart" element={<Cart/>}/>
+    </Routes>
+  )
 }
 
 export default App;
